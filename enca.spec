@@ -1,10 +1,10 @@
 Name: enca
 Summary: Character set analyzer and detector
-Version: 1.7
-Release: 4%{?dist}
+Version: 1.8
+Release: 1%{?dist}
 License: GPL
 Group: Applications/Text
-Source: http://trific.ath.cx/Ftp/enca/enca-1.7.tar.bz2
+Source: http://trific.ath.cx/Ftp/enca/enca-%{version}.tar.bz2
 URL: http://trific.ath.cx/software/enca/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -16,9 +16,9 @@ either a built-in converter or external libraries and tools like libiconv,
 librecode, or cstocs.
 
 Currently, it has support for Belarussian, Bulgarian, Croatian, Czech,
-Estonian, Latvian, Lithuanian, Polish, Russian, Slovak, Slovene, and
-Ukrainian and some multibyte encodings (mostly variants of Unicode)
-independently on the language.
+Estonian, Latvian, Lithuanian, Polish, Russian, Slovak, Slovene, Ukrainian,
+Chinese and some multibyte encodings (mostly variants of Unicode)
+independent on the language.
 
 This package also contains shared Enca library other programs can make use of.
 
@@ -96,18 +96,22 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Fri Sep 16 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 0.7-4
+* Mon Nov 28 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.8-1
+- upgrade to 1.8
+- update description
+
+* Fri Sep 16 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.7-4
 - clenup in docs
 - Accepted for Fedora Extra (review by Ville Skytta <ville.skytta@iki.fi>)
 
-* Thu Sep  9 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 0.7-3
+* Thu Sep  9 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.7-3
 - build static libs conditionally
 - disable external converters (#167820)
 
-* Thu Sep  8 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 0.7-2
+* Thu Sep  8 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.7-2
 - more cleanups (#167820)
 
-* Thu Sep  8 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 0.7-1
+* Thu Sep  8 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.7-1
 - spec cleanups for Fedora Extra
 - avoid build with librecode, use just glibc's iconv 
 - avoid any gtk dependencies, html docs are already present in the source
