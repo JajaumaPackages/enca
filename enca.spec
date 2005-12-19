@@ -1,6 +1,6 @@
 Name: enca
 Summary: Character set analyzer and detector
-Version: 1.8
+Version: 1.9
 Release: 1%{?dist}
 License: GPL
 Group: Applications/Text
@@ -96,6 +96,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Dec 19 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.9-1
+- upgrade to 1.9
+
 * Mon Nov 28 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.8-1
 - upgrade to 1.8
 - update description
