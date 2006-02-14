@@ -1,7 +1,7 @@
 Name: enca
 Summary: Character set analyzer and detector
 Version: 1.9
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: GPL
 Group: Applications/Text
 Source: http://trific.ath.cx/Ftp/enca/enca-%{version}.tar.bz2
@@ -96,6 +96,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Tue Feb 14 2006 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.9-2
+- rebuild for FC5
+
 * Mon Dec 19 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.9-1
 - upgrade to 1.9
 
