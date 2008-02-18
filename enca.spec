@@ -1,7 +1,7 @@
 Name: enca
 Summary: Character set analyzer and detector
 Version: 1.9
-Release: 3%{?dist}
+Release: 4%{?dist}
 License: GPLv2
 Group: Applications/Text
 Source: http://trific.ath.cx/Ftp/enca/enca-%{version}.tar.bz2
@@ -96,6 +96,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Feb 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.9-4
+- Autorebuild for GCC 4.3
+
 * Thu Aug 16 2007 Dmitry Butskoy <Dmitry@Butskoy.name>
 - Change License tag to GPLv2
 
