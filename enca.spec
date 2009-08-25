@@ -1,11 +1,11 @@
 Name: enca
 Summary: Character set analyzer and detector
-Version: 1.9
-Release: 6%{?dist}
+Version: 1.10
+Release: 1%{?dist}
 License: GPLv2
 Group: Applications/Text
-Source: http://trific.ath.cx/Ftp/enca/enca-%{version}.tar.bz2
-URL: http://trific.ath.cx/software/enca/
+Source: http://dl.cihar.com/enca/enca-%{version}.tar.bz2
+URL: http://gitorious.org/enca
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 
@@ -84,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %{_libdir}/libenca.so.*
 %{_mandir}/*/*
-%doc AUTHORS COPYING FAQ NEWS README THANKS TODO
+%doc AUTHORS COPYING FAQ README THANKS TODO
 
 %files devel
 %defattr(-,root,root)
@@ -96,6 +96,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Tue Aug 25 2009 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.10-1
+- Update to 1.10
+- Change urls for new upstream
+
 * Fri Jul 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.9-6
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
 
