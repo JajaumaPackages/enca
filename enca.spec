@@ -1,6 +1,6 @@
 Name: enca
 Summary: Character set analyzer and detector
-Version: 1.10
+Version: 1.13
 Release: 1%{?dist}
 License: GPLv2
 Group: Applications/Text
@@ -96,6 +96,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Mar 29 2010 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.13-1
+- update to 1.13
+
 * Tue Aug 25 2009 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.10-1
 - Update to 1.10
 - Change urls for new upstream
