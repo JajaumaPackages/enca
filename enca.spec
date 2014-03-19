@@ -83,7 +83,7 @@ make check
 %{_libdir}/pkgconfig/*
 %{?_with_static: %{_libdir}/*.a}
 %{_libdir}/*.so
-%doc devel-docs/html/*.html README.devel
+%doc README.devel
 
 
 %changelog
