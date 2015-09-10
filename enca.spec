@@ -1,10 +1,10 @@
 Name: enca
 Summary: Character set analyzer and detector
-Version: 1.15
-Release: 4%{?dist}
+Version: 1.16
+Release: 1%{?dist}
 License: GPLv2
 Group: Applications/Text
-Source: http://dl.cihar.com/enca/enca-%{version}.tar.bz2
+Source: http://dl.cihar.com/enca/enca-%{version}.tar.xz
 URL: http://cihar.com/software/enca
 
 
@@ -48,9 +48,10 @@ library.
 
 %configure \
 	--disable-dependency-tracking \
+	--disable-rpath \
 	--without-librecode \
 	--disable-external \
-	%{!?_with_static:--disable-static} \
+	--disable-static \
 	--disable-gtk-doc
 make %{?_smp_mflags}
 
@@ -87,6 +88,9 @@ make check
 
 
 %changelog
+* Thu Sep 10 2015 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.16-1
+- update to 1.16
+
 * Wed Jun 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.15-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
 
