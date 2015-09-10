@@ -32,8 +32,8 @@ Requires: %{name} = %{version}-%{release}
 Requires: pkgconfig
 
 %description devel
-The %{name}-devel package contains the static libraries and header files
-for writing programs using the Extremely Naive Charset Analyser library,
+The %{name}-devel package contains the header files for writing
+programs using the Extremely Naive Charset Analyser library,
 and its API documentation.
 
 Install %{name}-devel if you are going to create applications using the Enca
@@ -82,7 +82,6 @@ make check
 %files devel
 %{_includedir}/*
 %{_libdir}/pkgconfig/*
-%{?_with_static: %{_libdir}/*.a}
 %{_libdir}/*.so
 %doc README.devel
 
