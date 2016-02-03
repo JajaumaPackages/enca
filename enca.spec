@@ -1,7 +1,7 @@
 Name: enca
 Summary: Character set analyzer and detector
 Version: 1.16
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: GPLv2
 Group: Applications/Text
 Source: http://dl.cihar.com/enca/enca-%{version}.tar.xz
@@ -87,6 +87,9 @@ make check
 
 
 %changelog
+* Wed Feb 03 2016 Fedora Release Engineering <releng@fedoraproject.org> - 1.16-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
+
 * Thu Sep 10 2015 Dmitry Butskoy <Dmitry@Butskoy.name> - 1.16-1
 - update to 1.16
 
