@@ -1,7 +1,7 @@
 Name: enca
 Summary: Character set analyzer and detector
-Version: 1.18
-Release: 4%{?dist}
+Version: 1.19
+Release: 1%{?dist}
 License: GPLv2
 Group: Applications/Text
 Source: http://dl.cihar.com/enca/enca-%{version}.tar.xz
@@ -87,6 +87,9 @@ make check
 
 
 %changelog
+* Sat Sep 02 2017 Jajauma's Packages <jajauma@yandex.ru> - 1.19-1
+- Update to latest upstream release
+
 * Wed Aug 02 2017 Fedora Release Engineering <releng@fedoraproject.org> - 1.18-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild
 
